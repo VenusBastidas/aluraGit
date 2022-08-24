@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner{
+    width: 100%;
+}
+.principal{
+    background: #cccccc;
+    padding: 30px;
+}
+.tituloPrincipal{
+    padding-left: 30px;
+}
+p{
+    text-align: center;
+}
+em strong{
+    color: red;
+}
+#mision{
+    font-size: 20px;
+}
+.dif{
+    background: #ffffff;
+}
+.tituloCentral{
+    text-align: center;
+}
+.items{
+    font-style: italic;
+}
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imgDif{
+    width: 50%;
+}

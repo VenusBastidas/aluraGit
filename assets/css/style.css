@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #bbbbbb;
+    padding: 0 20px;
+}
+.logo{
+    height: 25vh;
+}
+.navBar{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 63px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #f88070;
+}
+nav a:active{
+    color: #186caa;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.productos li  {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 5%;
+}
+.productos li:hover{
+    border-color: #f88070;
+    transform: scale(1.05, 1.05);
+}
+.productos h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.productos li:hover h2{ 
+    font-size: 1.8rem;
+}
+.prodDesc{
+    font-size: 1rem;
+}
+.prodPrecio{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+}
+footer{
+    text-align: center;
+    background-color: #000000;
+}
+.copyright{
+    color: #ffffff;
+    font-size: .8rem;
+    padding-bottom: 3rem;
+}
+.formulario{
+    margin: 4rem 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+.inputDatos { 
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+form input:focus, form textarea:focus{
+    border:4px solid #f88070
+}
+.checkbox{
+    margin: 2rem 0;
+}
+fieldset{
+    border: 1px solid #000000;
+    margin: 1rem 0;
+}
+option{
+    font-family: 'Montserrat', sans-serif;
+}
+.sendButton{
+    width: 40%;
+    padding: 1rem 0;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #f88070;
+    border: none;
+    transition: 0.5s all;
+}
+.sendButton:hover{
+    background-color: #9c4f43;
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+table{
+    margin: 40px;
+}
+thead{
+    background-color: #bbbbbb;
+    color: #ffffff;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000000;
+    padding: 0.2rem 1rem;
+}
+
+/* todo CSS home*/ 
+
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3rem 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    clear: left;
+    color: rgb( 0, 0, 0);
+    transition: 400ms;
+}
+.tituloPrincipal:hover{
+    transform: scale(1.1);
+    color: #9c4f43;
+}
+.principal p{
+    margin: 0 0 1rem;
+}
+.principal strong{
+    font-weight: bolder;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 1.1rem 1.1rem 0;
+}
+.map{
+    padding: 3rem 0;
+    background: linear-gradient(#ffffff, #888888) ;
+}
+.map p{
+    margin: 0 0 2rem;
+    text-align: center;
+}
+.mapContainer{
+    width: 940px;
+    margin: 0 auto;
+}
+.dif {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.lista-diferenciales {
+    width: 80%;
+    vertical-align: top;
+}
+.lista-diferenciales li{
+    list-style: none;
+}
+
+.items {
+    line-height: 1.5;
+}
+.items::before{
+    content: '★';
+}
+.imagen-diferenciales {
+    width: 100%;
+    transition: 400ms;
+    box-shadow: -10px -10px 30px 10px #000000, 10px 10px 30px 10px #000000;
+}
+.imagen-diferenciales:hover {
+    opacity: .3;
+}
+.video{
+    width: 560px;
+    margin: 0 auto;
+}
+.videoContainer{
+    background: linear-gradient(#888888, #000000)
+}
+nav i{
+    display: none;
+}
+@media screen and (max-width: 480px){
+    .caja, .principal, .mapContainer, .dif, .video{
+        width: auto;
+    }
+    .navBarItems{
+        display: none;
+    }
+    nav i{
+        display: inline;
+    }
+    .imagen-diferenciales, .contenido-diferenciales{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
